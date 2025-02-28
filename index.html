@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewpoint" content="width=device-width" initial-scale="1.0">
+    <title>Patient History Form</title>
+    <style>
+        body,html{
+            margin:0;
+            padding:0;
+            background-color: #95a5a6;
+            height:100%;
+        }
+        .container{
+                display:flex;
+                justify-content:left;
+                align-items:left;
+                height:100%;
+        }
+        .box{
+             padding:  20px  100px;
+            justify-content: center;
+               
+                align-items: center;
+
+
+        }
+        h2{
+            color: rgb(6, 6, 6);
+        }
+        h3{
+            color:rgb(6, 6, 6);
+        }
+        input{
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid rgb(225, 214, 214);
+            border-radius: 5px;
+        }
+        button{
+            width: 20%;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: rgb(29, 30, 29);
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(209, 209, 237);
+            transform:scale(1.05);
+            cursor:pointer;
+        }
+    
+
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+    <h2>Patient History Form</h2>
+    <h3>Personal Information</h3>
+  
+    Name<br><input type="text"placeholder="Enter your name"><br><br>
+    Date of birth<br><input type="date" placeholder="Date of birth"><br><br>
+    Age<br><input type="number" placeholder="Enter your age"><br><br>
+    Gender<input type="radio" name="Gender">male
+    <input type="radio" name="Gender">female<br><br>
+    Date of Appointment<br><input type="date" placeholder="Select date"><br><br>
+    Contact Details<br><input type="number" placeholder="Enter phone number"><br><br>
+    Time<br><input type="time" placeholder="Select time"><br><br>
+    <button onclick="Press()">Submit</button>
+    <script>
+        function Press(){
+            alert ('Form Submitted Successfully');
+        }
+    </script>
+
+
+
+</div>
+</div>
+</body>
+
+</html>
